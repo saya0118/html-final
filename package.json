@@ -1,0 +1,23 @@
+{
+  "name": "html-final",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass scss/main.scss -o css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saya0118/html-final.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saya0118/html-final/issues"
+  },
+  "homepage": "https://github.com/saya0118/html-final#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}

@@ -1,0 +1,224 @@
+$color-primary: white;
+$color-secondary: black;
+$color-tertiary: #F9F8F7;
+$color-quaternary: #527344;
+
+$font-lg: 35px;
+$font-md: 25px;
+$font-sm: 20px;
+
+body{
+    width: 100%;
+    margin: 0;
+
+.header {
+    background-color: $color-primary;
+    height: 191px;
+
+        .header-title{
+            height: 90px;
+            margin-top: 9px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .header-logo{
+                width: auto;
+                height: 78px;
+            }
+
+            .header-name{
+                font-size: $font-lg;
+                height: 53px;
+                width: 241px;
+            }
+        }
+
+        .nav-navigation{
+            .nav-list{
+                height: 63px;
+                width: 100%;
+                .nav-list-item{
+                    float: left;
+                    align-items:center;
+                    justify-content: center;
+                    font-size: $font-md;
+                    padding-left: 10%;
+                    list-style: none;
+                    text-decoration: none;
+                    color: $color-secondary;
+                }
+            }
+        }
+    }
+
+.main{
+    background-color:$color-primary;
+    margin: 0;
+
+    .main-img{
+        width: 100%;
+        margin: 0;
+    }
+}
+
+.recommend-product{
+    height: 1242px;
+
+    .recommendation-title{
+        height: 68px;
+        margin-left: 300px;
+
+        title{
+            font-size:$font-md;
+            text-align: center;
+        }
+    }
+
+    .products-contents{
+        height: 931px;
+        width: 840px;
+        margin-left: auto;
+        margin-right: auto;
+        .products-list{
+            text-decoration: none;
+            list-style: none;
+            padding-left: 0;
+            .products-item{
+                display: inline-block;
+                justify-content: space-between;
+                width: 367px;
+                height: 438px;
+                .products-img{
+                    width: 387px;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+.view-all{
+    height: 159px;
+    text-align: center;
+    .view-all-button{
+        width: 542px;
+        height:83px;
+        background-color:$color-tertiary;
+        border: none;
+        color: $color-quaternary;
+        font-size: $font-sm;
+    }
+}
+
+.highlight{
+    height: 2159px;
+    margin: 0;
+    .highlight-list{
+        list-style: none;
+        .highlight-item{
+            margin-bottom: 177px;
+            width: 977px;
+            height: 512px;
+            background-color:#F9F8F7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: auto;
+            margin-left: auto;
+
+            
+            .highlight-img{
+                width: 667px;
+                height: 512px;
+                object-fit: cover;
+            }
+
+            .highlight-title{
+                font-size: $font-md;
+
+            }
+
+            .highlight-text{
+                font-size: 23px;
+
+            }
+        }
+    }
+
+    
+}
+
+.share{
+    height:134px;
+    margin-bottom: 70px;
+    .share-title{
+        height: 50px;
+        color:#527344;
+        font-size: $font-md;
+        text-align: center;
+    }
+
+    .share-icon{
+        .share-list{
+            list-style: none;
+            text-align: center;
+            .share-item{
+                display: inline-block;
+                .share-img{
+                    width: 59px;
+                    margin-right: 5px;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}
+
+.footer{
+    margin: 0;
+    background-color: $color-tertiary;
+    padding-top: 50px;
+    .footer-title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .footer-title-logo{
+            height: 78px;
+        }
+
+        .footer-title-name{
+            font-size: $font-lg;
+        }
+    }
+}
+
+.footer-nav{
+    background-color: $color-tertiary;
+    margin:0;
+    height: 70px;
+    padding-top: 80px;
+    .footer-nav-left{
+        .footer-nav-list{
+            list-style: none;
+            float: left;
+            margin-left: 30px;
+            .footer-nav-item{
+                color: $color-secondary;
+
+            }
+        }
+    }
+
+    .footer-nav-right{
+        .nav-list-link{
+            color: $color-secondary;
+            text-decoration: none;
+            float: right;
+            margin-right: 30px;
+        }
+
+    }
+}
+
+}

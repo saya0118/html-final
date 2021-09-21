@@ -1,0 +1,140 @@
+body {
+  width: 100%;
+  margin: 0; }
+  body .header {
+    background-color: white;
+    height: 191px; }
+    body .header .header-title {
+      height: 90px;
+      margin-top: 9px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      body .header .header-title .header-logo {
+        width: auto;
+        height: 78px; }
+      body .header .header-title .header-name {
+        font-size: 35px;
+        height: 53px;
+        width: 241px; }
+    body .header .nav-navigation .nav-list {
+      height: 63px;
+      width: 100%; }
+      body .header .nav-navigation .nav-list .nav-list-item {
+        float: left;
+        align-items: center;
+        justify-content: center;
+        font-size: 25px;
+        padding-left: 10%;
+        list-style: none;
+        text-decoration: none;
+        color: black; }
+  body .main {
+    background-color: white;
+    margin: 0; }
+    body .main .main-img {
+      width: 100%;
+      margin: 0; }
+  body .recommend-product {
+    height: 1242px; }
+    body .recommend-product .recommendation-title {
+      height: 68px;
+      margin-left: 300px; }
+      body .recommend-product .recommendation-title title {
+        font-size: 25px;
+        text-align: center; }
+    body .recommend-product .products-contents {
+      height: 931px;
+      width: 840px;
+      margin-left: auto;
+      margin-right: auto; }
+      body .recommend-product .products-contents .products-list {
+        text-decoration: none;
+        list-style: none;
+        padding-left: 0; }
+        body .recommend-product .products-contents .products-list .products-item {
+          display: inline-block;
+          justify-content: space-between;
+          width: 367px;
+          height: 438px; }
+          body .recommend-product .products-contents .products-list .products-item .products-img {
+            width: 387px;
+            height: auto; }
+  body .view-all {
+    height: 159px;
+    text-align: center; }
+    body .view-all .view-all-button {
+      width: 542px;
+      height: 83px;
+      background-color: #F9F8F7;
+      border: none;
+      color: #527344;
+      font-size: 20px; }
+  body .highlight {
+    height: 2159px;
+    margin: 0; }
+    body .highlight .highlight-list {
+      list-style: none; }
+      body .highlight .highlight-list .highlight-item {
+        margin-bottom: 177px;
+        width: 977px;
+        height: 512px;
+        background-color: #F9F8F7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: auto;
+        margin-left: auto; }
+        body .highlight .highlight-list .highlight-item .highlight-img {
+          width: 667px;
+          height: 512px;
+          object-fit: cover; }
+        body .highlight .highlight-list .highlight-item .highlight-title {
+          font-size: 25px; }
+        body .highlight .highlight-list .highlight-item .highlight-text {
+          font-size: 23px; }
+  body .share {
+    height: 134px;
+    margin-bottom: 70px; }
+    body .share .share-title {
+      height: 50px;
+      color: #527344;
+      font-size: 25px;
+      text-align: center; }
+    body .share .share-icon .share-list {
+      list-style: none;
+      text-align: center; }
+      body .share .share-icon .share-list .share-item {
+        display: inline-block; }
+        body .share .share-icon .share-list .share-item .share-img {
+          width: 59px;
+          margin-right: 5px;
+          margin-left: 5px; }
+  body .footer {
+    margin: 0;
+    background-color: #F9F8F7;
+    padding-top: 50px; }
+    body .footer .footer-title {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      body .footer .footer-title .footer-title-logo {
+        height: 78px; }
+      body .footer .footer-title .footer-title-name {
+        font-size: 35px; }
+  body .footer-nav {
+    background-color: #F9F8F7;
+    margin: 0;
+    height: 70px;
+    padding-top: 80px; }
+    body .footer-nav .footer-nav-left .footer-nav-list {
+      list-style: none;
+      float: left;
+      margin-left: 30px; }
+      body .footer-nav .footer-nav-left .footer-nav-list .footer-nav-item {
+        color: black; }
+    body .footer-nav .footer-nav-right .nav-list-link {
+      color: black;
+      text-decoration: none;
+      float: right;
+      margin-right: 30px; }
