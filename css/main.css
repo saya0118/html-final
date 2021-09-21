@@ -1,9 +1,11 @@
 body {
   width: 100%;
-  margin: 0; }
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+  box-sizing: border-box; }
   body .header {
     background-color: white;
-    height: 191px; }
+    height: 170px; }
     body .header .header-title {
       height: 90px;
       margin-top: 9px;
@@ -17,18 +19,16 @@ body {
         font-size: 35px;
         height: 53px;
         width: 241px; }
-    body .header .nav-navigation .nav-list {
-      height: 63px;
-      width: 100%; }
-      body .header .nav-navigation .nav-list .nav-list-item {
-        float: left;
-        align-items: center;
-        justify-content: center;
-        font-size: 25px;
-        padding-left: 10%;
-        list-style: none;
-        text-decoration: none;
-        color: black; }
+    body .header .nav-navigation {
+      margin-top: 10px; }
+      body .header .nav-navigation .nav-list {
+        display: flex; }
+        body .header .nav-navigation .nav-list .nav-list-item {
+          padding-left: 11%;
+          font-size: 25px;
+          list-style: none;
+          text-decoration: none;
+          color: black; }
   body .main {
     background-color: white;
     margin: 0; }
@@ -36,13 +36,17 @@ body {
       width: 100%;
       margin: 0; }
   body .recommend-product {
-    height: 1242px; }
+    height: 1100px; }
     body .recommend-product .recommendation-title {
       height: 68px;
-      margin-left: 300px; }
-      body .recommend-product .recommendation-title title {
+      margin-top: 80px;
+      margin-bottom: 5px;
+      width: 840px;
+      margin-right: auto;
+      margin-left: auto; }
+      body .recommend-product .recommendation-title h2 {
         font-size: 25px;
-        text-align: center; }
+        text-align: left; }
     body .recommend-product .products-contents {
       height: 931px;
       width: 840px;
@@ -51,15 +55,22 @@ body {
       body .recommend-product .products-contents .products-list {
         text-decoration: none;
         list-style: none;
-        padding-left: 0; }
+        display: flex;
+        padding: 0;
+        justify-content: space-between; }
         body .recommend-product .products-contents .products-list .products-item {
-          display: inline-block;
-          justify-content: space-between;
           width: 367px;
-          height: 438px; }
+          height: 438px;
+          background-color: #F9F8F7;
+          margin-bottom: 80px; }
           body .recommend-product .products-contents .products-list .products-item .products-img {
             width: 387px;
             height: auto; }
+          body .recommend-product .products-contents .products-list .products-item .products-name {
+            padding-left: 15px;
+            margin-top: 50px; }
+          body .recommend-product .products-contents .products-list .products-item .products-price {
+            padding-left: 15px; }
   body .view-all {
     height: 159px;
     text-align: center; }
@@ -71,13 +82,13 @@ body {
       color: #527344;
       font-size: 20px; }
   body .highlight {
-    height: 2159px;
-    margin: 0; }
+    height: 2000px;
+    margin-top: 100px; }
     body .highlight .highlight-list {
       list-style: none; }
       body .highlight .highlight-list .highlight-item {
         margin-bottom: 177px;
-        width: 977px;
+        width: 70%;
         height: 512px;
         background-color: #F9F8F7;
         display: flex;
@@ -88,11 +99,14 @@ body {
         body .highlight .highlight-list .highlight-item .highlight-img {
           width: 667px;
           height: 512px;
-          object-fit: cover; }
+          object-fit: cover;
+          position: relative; }
         body .highlight .highlight-list .highlight-item .highlight-title {
-          font-size: 25px; }
+          font-size: 25px;
+          padding-left: 15px; }
         body .highlight .highlight-list .highlight-item .highlight-text {
-          font-size: 23px; }
+          font-size: 23px;
+          padding-left: 15px; }
   body .share {
     height: 134px;
     margin-bottom: 70px; }
@@ -103,13 +117,14 @@ body {
       text-align: center; }
     body .share .share-icon .share-list {
       list-style: none;
-      text-align: center; }
+      text-align: center;
+      padding: 0; }
       body .share .share-icon .share-list .share-item {
         display: inline-block; }
         body .share .share-icon .share-list .share-item .share-img {
-          width: 59px;
-          margin-right: 5px;
-          margin-left: 5px; }
+          width: 70px;
+          margin-right: 10px;
+          margin-left: 10px; }
   body .footer {
     margin: 0;
     background-color: #F9F8F7;
@@ -133,8 +148,166 @@ body {
       margin-left: 30px; }
       body .footer-nav .footer-nav-left .footer-nav-list .footer-nav-item {
         color: black; }
-    body .footer-nav .footer-nav-right .nav-list-link {
-      color: black;
-      text-decoration: none;
-      float: right;
+    body .footer-nav .footer-nav-right {
       margin-right: 30px; }
+      body .footer-nav .footer-nav-right .nav-list-link {
+        color: black;
+        text-decoration: none;
+        float: right; }
+  @media screen and (max-width: 1000px) {
+    body .header {
+      background-color: white;
+      height: 170px; }
+      body .header .header-title {
+        height: 90px;
+        margin-top: 9px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        body .header .header-title .header-logo {
+          width: auto;
+          height: 78px; }
+        body .header .header-title .header-name {
+          font-size: 35px;
+          height: 53px;
+          width: 241px; }
+      body .header .nav-navigation {
+        margin-top: 10px; }
+        body .header .nav-navigation .nav-list {
+          display: flex; }
+          body .header .nav-navigation .nav-list .nav-list-item {
+            padding-left: 6%;
+            font-size: 25px;
+            list-style: none;
+            text-decoration: none;
+            color: black; }
+    body .highlight {
+      height: 1500px;
+      margin-top: 100px; }
+      body .highlight .highlight-list {
+        list-style: none; }
+        body .highlight .highlight-list .highlight-item {
+          margin-bottom: 177px;
+          width: 80%;
+          height: 318px;
+          background-color: #F9F8F7;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: auto;
+          margin-left: auto; }
+          body .highlight .highlight-list .highlight-item .highlight-img {
+            width: 458px;
+            height: 318px;
+            object-fit: cover;
+            position: relative; }
+          body .highlight .highlight-list .highlight-item .highlight-title {
+            font-size: 25px;
+            padding-left: 15px; }
+          body .highlight .highlight-list .highlight-item .highlight-text {
+            font-size: 23px;
+            padding-left: 15px; } }
+  @media screen and (max-width: 500px) {
+    body .header {
+      background-color: white;
+      height: 170px; }
+      body .header .header-title {
+        height: 90px;
+        margin-top: 9px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        body .header .header-title .header-logo {
+          width: auto;
+          height: 78px; }
+        body .header .header-title .header-name {
+          font-size: 35px;
+          height: 53px;
+          width: 241px; }
+      body .header .nav-navigation {
+        margin-top: 10px; }
+        body .header .nav-navigation .nav-list {
+          display: flex; }
+          body .header .nav-navigation .nav-list .nav-list-item {
+            padding-left: 3%;
+            font-size: 20px;
+            list-style: none;
+            text-decoration: none;
+            color: black; }
+    body .recommend-product {
+      height: 472px; }
+      body .recommend-product .recommendation-title {
+        height: 34px;
+        margin-top: 40px;
+        margin-bottom: 5px;
+        width: 130px;
+        margin-right: auto;
+        margin-left: auto; }
+        body .recommend-product .recommendation-title h2 {
+          font-size: 15px;
+          text-align: left; }
+      body .recommend-product .products-contents {
+        height: 385px;
+        width: 326px;
+        margin-left: auto;
+        margin-right: auto; }
+        body .recommend-product .products-contents .products-list {
+          text-decoration: none;
+          list-style: none;
+          display: flex;
+          padding: 0;
+          justify-content: space-between; }
+          body .recommend-product .products-contents .products-list .products-item {
+            width: 154px;
+            height: 184px;
+            background-color: #F9F8F7;
+            margin-bottom: 23px; }
+            body .recommend-product .products-contents .products-list .products-item .products-img {
+              width: 154px;
+              height: auto; }
+            body .recommend-product .products-contents .products-list .products-item .products-name {
+              padding-left: 10px;
+              margin-top: 20px; }
+            body .recommend-product .products-contents .products-list .products-item .products-price {
+              padding-left: 10px; }
+    body .view-all {
+      height: 30px;
+      text-align: center; }
+      body .view-all .view-all-button {
+        width: 150px;
+        height: 20px;
+        background-color: #F9F8F7;
+        border: none;
+        color: #527344;
+        font-size: 10px; }
+    body .highlight .highlight-list {
+      list-style: none; }
+      body .highlight .highlight-list .highlight-item {
+        width: 90%;
+        height: 264;
+        background-color: #F9F8F7;
+        margin-right: auto;
+        margin-left: auto; }
+        body .highlight .highlight-list .highlight-item .highlight-img {
+          width: 338px;
+          height: 264px; }
+        body .highlight .highlight-list .highlight-item .highlight-title {
+          font-size: 20px;
+          padding-left: 15px; }
+        body .highlight .highlight-list .highlight-item .highlight-text {
+          font-size: 15px;
+          padding-left: 15px; }
+    body .footer-nav {
+      background-color: #F9F8F7;
+      margin: 0;
+      height: 70px;
+      padding-top: 80px; }
+      body .footer-nav .footer-nav-left .footer-nav-list {
+        list-style: none;
+        text-align: center; }
+        body .footer-nav .footer-nav-left .footer-nav-list .footer-nav-item {
+          color: black; }
+      body .footer-nav .footer-nav-right .nav-list-link {
+        color: black;
+        text-decoration: none;
+        text-align: center; } }
